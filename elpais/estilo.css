@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+#arriba {
+    background-color: #003366;
+    height: 100px!important;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#arriba ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#arriba li {
+    color: white;
+    font-size: 18px;
+}
+
+#arriba li:nth-child(2) {
+    color: greenyellow; /* Cambiar color de texto a verde */
+}
+
+main {
+    width: 800px;
+    margin: 20px auto;
+    flex-grow: 1;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+.centrar {
+    text-align: center;
+}
+
+p {
+   /*border: 1px solid;*/    /* borde forzado para ver los elementos */
+   /*padding:20px;*/
+    margin: 20px;
+    display: flex;
+    align-items: flex-start; /* Alinea el texto y la primera letra al mismo nivel */
+}
+
+.grande {
+    display: inline-block;
+}
+
+.grande::first-letter {
+    font-size: 10em;
+    font-weight: bold;
+    float: left;  /* Flota la primera letra a la izquierda del texto */
+    line-height: 0.8; /* Reduce el espacio interno de la primera letra */
+    margin-right: 10px; /* Espacio entre la letra y el texto */
+    margin-top: -10px; /* Ajusta para subir el texto hasta la parte superior */
+}
