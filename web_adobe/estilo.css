@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url('images/fondo-1400x860.jpg'); /* Ruta de tu imagen */
+    background-size: cover;                     /* La imagen cubre toda la pantalla */
+    background-position: center 0%;             /* Mueve la imagen hacia abajo (ajustable) */
+    background-attachment: fixed;                /* La imagen no se mueve al hacer scroll */
+    background-repeat: no-repeat;                /* Evita que la imagen se repita */
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilo para el rectángulo rojo con imagen */
+.rectangle {
+    position: absolute;        /* Posiciona el rectángulo de forma absoluta */
+    top: 0;                    /* Lo coloca en la parte superior */
+    left: 100px;               /* Lo desplaza 200px hacia la derecha */
+    width: 50px;              /* Ancho del rectángulo */
+    height: 100px;             /* Alto del rectángulo */
+    background-color: red;     /* Fondo rojo */
+    display: flex;             /* Flexbox para el contenido (imagen) dentro */
+    justify-content: center;   /* Centra la imagen horizontalmente */
+    align-items: flex-end;     /* Alinea la imagen a la parte inferior del rectángulo */
+    padding: 10px;             /* Un poco de espacio alrededor de la imagen */
+}
+
+/* Estilo de la imagen dentro del rectángulo */
+.rectangle-image {
+    width: 200%;                /* Imagen más pequeña que el rectángulo */
+    height: auto;              /* Mantiene la proporción de la imagen */
+    object-fit: contain;       /* Ajusta la imagen dentro del rectángulo sin distorsionarla */
+}
+
+.content {
+    text-align: left;
+    color: black;
+    margin: 20px;              /* Margen de 20px en todos los lados */
+    padding: 50px;             /* Padding de 20px para el contenido interno */
+    padding-top: 150px;        /* Padding superior de 100px para mover el contenido más abajo */
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: normal;       /* Respetar el grosor de la fuente */
+    margin-bottom: 20px;
+    font: optional;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;       /* Respetar el grosor de la fuente */
+}
+
+/* Estilo para el menú superior derecha */
+.top-links {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.link i {
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #ccc;
+}
+
+
+/* Cuerpo de la página*/
+.content {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Caja1 arriba */
+    gap: 20px;
+    padding: 20px;
+}
+  
+.caja1 {
+    width: 70%;
+}
+  
+.caja1 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.caja1 p {
+    width: 480px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+.caja1 a {
+    color: #007bff; /* Enlace en azul */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+  
+.caja1 a:hover {
+    color: #0158b4; /* Azul más oscuro al pasar el ratón */
+    text-decoration: underline;
+}
+  
+.caja1 button {
+    background-color: #007bff; /* Botón azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+  
+.caja1 button:hover {
+    background-color: #0158b4; /* Azul más oscuro en hover */
+}
+  
+.caja2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.caja2 p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.caja2 hr {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 0;
+}
+
+/* Pie de página */
+.custom-footer {
+    background-color: #212224;
+    color: white;
+    text-align: center;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+ .special-offers {
+    text-align: left;
+    margin-left: 60px;
+    color: orange;
+ }
+
+.special-offers a {
+    color: #ccc;
+    text-decoration: underline;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+  
+.special-offers a:hover {
+    color: white; 
+    text-decoration: none;    
+}
+  
+.footer-boxes {
+    padding: 0;
+}
+  
