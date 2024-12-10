@@ -1,0 +1,17 @@
+header {
+    background-color: aqua;
+}
+
+section {
+    background-color: beige;
+}
+
+img {
+    width: 33%;
+    height: auto;
+    filter: saturate(0);
+}
+
+a:hover img {
+    filter: saturate(1);
+}
