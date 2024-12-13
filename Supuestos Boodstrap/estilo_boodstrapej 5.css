@@ -1,0 +1,89 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.container-fluid {
+    padding: 0;
+}
+
+/* Estilos para el relleno verde en la parte superior */
+.top-box {
+    background-color: #28a745 !important; /* Verde */
+    color: white !important;
+    padding: 35px !important;
+    text-align: center; /* Centrar texto dentro del top-box */
+}
+
+/* Estilos para la columna izquierda (3 de 12) */
+.left-box {
+    background-color: #e74c3c !important; /* Rojo */
+    color: white !important;
+    padding: 15px !important;
+    height: 100%;
+}
+
+/* Estilos para la columna derecha (6 de 12, en el centro) */
+.right-box {
+    background-color: #3498db !important; /* Azul */
+    color: white !important;
+    padding: 15px !important;
+    height: 100%;
+}
+
+/* Estilos para la nueva columna amarilla (3 de 12) */
+.yellow-box {
+    background-color: #f1c40f !important; /* Amarillo */
+    color: white !important;
+    padding: 15px !important;
+    height: 100%; /* Aseguramos que el box amarillo tenga la misma altura que los otros */
+}
+
+/* Estilos para el relleno gris en la parte inferior */
+.bottom-box {
+    background-color: #6c757d !important; /* Gris */
+    color: white !important;
+    padding: 15px !important;
+    text-align: center;
+}
+
+/* Estilos generales para el texto */
+.top-box p, .left-box p, .right-box p, .yellow-box p, .bottom-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Asegurarse de que las columnas ocupen toda la altura */
+.row.d-flex {
+    height: calc(100vh - 70px); /* Asegura que la fila ocupe toda la altura restante después del top-box */
+    display: flex;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .left-box, .right-box, .yellow-box {
+        margin-bottom: 15px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-box, .right-box, .yellow-box {
+        width: 100%;
+        margin: 5px 0;
+        height: auto;
+    }
+}
