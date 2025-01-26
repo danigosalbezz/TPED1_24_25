@@ -1,0 +1,226 @@
+/* GENERAL */
+
+body {
+	background-color: #2c2c2c;
+	color: #ddd;
+	font-size: 1.4rem;
+}
+h2 {
+	font-family: 'Pacifico', cursive;
+	font-size: 3rem;
+	color: #b39ddb;
+}
+
+h3 {
+	font-family: 'Pacifico', cursive;
+	font-size: 2rem;
+	color: #d1c4e9;
+}
+
+.resaltar {
+	color: #b39ddb;
+	font-weight: bold;
+}
+.navbar {
+	background-color: #222;
+}
+.section {
+	padding: 60px 0;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 10px; 
+}
+
+.navbar-brand:hover {
+	text-decoration: none;
+}
+
+/* CABECERA */
+.designer-name {
+	font-family: 'Pacifico', serif; /* Fuente elegante  */
+	color: #ddd;
+	font-size: 3.5rem;
+ }
+ 
+ .designer-title {
+	margin: -10px 0px 0px 260px;
+	font-family: 'Montserrat', sans-serif; /* Fuente más limpia y moderna */
+	font-size: 0.9rem;
+	display: block;
+	color: #777; /* Color más sutil */
+ }
+ 
+.navbar-nav li a{
+	text-transform: uppercase;
+}
+
+/* PORTFOLIO */
+#portfolio {
+	padding: 50px 0;
+}
+
+.slider-container {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center; 
+}
+
+.slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	gap: 10px;
+	padding-bottom: 10px;
+	scrollbar-width: none;
+	justify-content: flex-start; 
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	width: auto;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Flechas de navegación */
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	font-size: 20px;
+	border-radius: 50%;
+	z-index: 10;
+}
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.pdf-slide {
+	position: relative;
+	display: inline-block;
+}
+
+.pdf-overlay {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.6);
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.pdf-button {
+	background: rgba(255, 0, 0, 0.8);
+	color: white;
+	padding: 8px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	transition: background 0.3s;
+}
+
+.pdf-button i {
+	font-size: 16px;
+}
+
+.pdf-button:hover {
+	background: rgba(255, 0, 0, 1);
+	text-decoration: none;
+}
+
+/* SKILLS */
+.skill {
+	display: inline-block;
+	text-align: center;
+	margin: 20px;
+}
+ 
+.skill img {
+	width: 80px;
+	height: auto;
+}
+ 
+.skill .texto {
+	margin-top: 5px;
+	font-size: 1.0rem;
+	color: #d1c4e9;
+} 
+
+.percentage {
+	margin-top: 5px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/* CONTACTO */
+#contacto {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.contact-info {
+	margin-bottom: 30px;
+}
+
+.contact-info a[href^="mailto:"] {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-info a[href^="mailto:"]:hover {
+	color: gray;
+	text-decoration: underline;
+	text-underline-offset: 5px; 
+}
+
+.contact-info p {
+	font-size: 1.1rem;
+	margin: 10px 0;
+}
+
+.contact-info strong {
+	font-weight: bold;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 30px; 
+}
+
+.social-icon i {
+	font-size: 50px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover i {
+	transform: scale(1.2);
+}
+
+/* Colores específicos */
+.instagram i {
+	color: #FFFFFF;
+}
+
+.linkedin i {
+	color: #FFFFFF;
+}
